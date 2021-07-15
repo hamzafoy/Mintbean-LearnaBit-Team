@@ -1,0 +1,33 @@
+/** Broswer Reset -> Starts */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+/** Broswer Reset -> Ends */
+
+:root {
+  --body: 'Rubik', sans-serif;
+  --header: 'Viga', sans-serif;
+  --background-color: #4143b1;
+  --background2-color: #221727;
+  --primary-color: #5ef4d6;
+  --primary2-color: #24e5a3;
+  --body-font: #f1fff6;
+  --secondary-color: #221727;
+}
