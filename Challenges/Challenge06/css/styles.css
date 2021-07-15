@@ -1,4 +1,4 @@
-/** Broswer Reset -> Starts */
+/** Browser Reset -> Starts */
 *,
 *::before,
 *::after {
@@ -19,7 +19,7 @@ img {
   height: 100%;
 }
 
-/** Broswer Reset -> Ends */
+/** Browser Reset -> Ends */
 
 :root {
   --body: 'Rubik', sans-serif;
@@ -28,8 +28,163 @@ img {
   --background2-color: #221727;
   --primary-color: #5ef4d6;
   --primary2-color: #24e5a3;
-  --body-font: #f1fff6;
+  --body-font-color: #f1fff6;
   --secondary-color: #221727;
+}
+
+.nav {
+  position: relative;
+  height: 4.5rem;
+  background-color: var(--secondary-color);
+}
+
+.nav .nav--logo {
+  height: 4.5rem;
+  padding: 1rem;
+}
+
+#nav--links {
+  display: none;
+  padding: 0 1.5rem 0rem 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+#nav--links a {
+  padding: 1.5rem;
+  text-align: end;
+  color: var(--body-font-color);
+}
+
+#nav--links a:hover {
+  color: var(--hover-color) !important;
+}
+
+.nav--separtor {
+  display: none;
+  color: var(--body-font-color);
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+  font-size: 1.33rem;
+  color: var(--primary-color);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--body);
+  color: var(--body-font-color);
+  background: url(../images/mintbean-dome.png) no-repeat center / cover;
+}
+
+.hero--card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: #221727b1;
+}
+
+.hero--card-title {
+  font-size: 1.71rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--header);
+}
+
+.hero--card-info {
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-size: 0.78rem;
+}
+
+.hero--card-button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+.about-container {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.about-main-title {
+  padding: 1.15em 0;
+  font-family: var(--header);
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5ef4d6;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-card-main-title {
+  font-size: 1.5em;
+  font-family: var(--header);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: #f1fff6;
+}
+
+.about-card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border: #24e5a3 solid 3px;
+  border-radius: 10px;
+  width: 90vw;
+  background-color: rgba(34, 23, 39, 0.8);
+}
+
+.text-and-button-container {
+  margin: 1em 1em;
+}
+
+.about-card-main-text {
+  display: block;
+  padding: 0.65em 0;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: var(--body);
+  letter-spacing: 0.01em;
+  color: #f1fff6;
+}
+
+.join-button {
+  background-color: #5ef4d6;
+  color: #221727;
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: none;
+  font-family: var(--body);
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
 }
 
 .team-container {
@@ -164,7 +319,132 @@ img {
     brightness(96%) contrast(105%);
 }
 
+
+/*! ----- Media Queries Begin ---- */
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  #nav--links {
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #nav--links a {
+    padding: 1.5rem;
+    color: var(--body-font-color);
+  }
+
+  li.nav--separtor {
+    align-self: center;
+  }
+
+  .nav--separtor {
+    display: inline-flex;
+  }
+
+  .nav--button {
+    /** Position */
+    margin-top: -0.2rem;
+    margin-left: -1.85rem;
+    /** Box Modal */
+    padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+    /** Typography */
+    color: var(--secondary-color);
+    font-family: var(--body);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    /** Visiual */
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+
+  .hero--card {
+    width: 38rem;
+    margin: 12rem auto auto 8rem;
+  }
+
+  .hero--card {
+    justify-items: start;
+  }
+
+  .hero--card-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-family: var(--header);
+  }
+
+  .hero--card-info {
+    font-size: 1.25rem;
+    line-height: 1.74rem;
+  }
+}
+
 @media (min-width: 860px) {
+  img {
+    height: 600px;
+    width: 1000px;
+  }
+
+  .about-card-container {
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+  }
+
+  #mintbean-dome {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .about-main-title {
+    font-size: 2.5em;
+  }
+
+  .text-and-button-container {
+    margin: 1.25em 2.25em;
+  }
+
+  .about-card-main-title {
+    margin: 0 0 3vh;
+    font-weight: bold;
+    font-size: 1.95em;
+  }
+
+  .about-card-main-text {
+    margin: 0 0 2vh;
+    font-size: 1.075em;
+  }
+
+  .join-button {
+    background-color: #5ef4d6;
+    color: #221727;
+    font-size: 1.25em;
+    padding: 0.75em 2.25em;
+    margin: 0 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+  }
   .team-container {
     height: 100vh;
     background-color: var(--background-color);
@@ -195,5 +475,12 @@ img {
     border-radius: 10px;
     width: 20vw;
     background-color: rgba(34, 23, 39, 0.8);
+  }
+}
+/* 4K Desktop View */
+@media screen and (min-width: 2560px) {
+  #nav--links {
+    padding-left: 88.5rem;
+    background-color: none !important;
   }
 }
