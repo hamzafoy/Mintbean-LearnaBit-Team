@@ -33,7 +33,7 @@ img {
 }
 
 .about-container {
-  height: 135vh;
+  min-height: 100vh;
   background-color: var(--background-color);
 }
 
@@ -107,7 +107,7 @@ img {
 }
 
 .about-container {
-  height: 130vh;
+  min-height: 100vh;
   background-color: var(--background-color);
 }
 
