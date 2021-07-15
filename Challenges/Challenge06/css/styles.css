@@ -187,7 +187,140 @@ img {
   width: 100%;
 }
 
-/* Media Queries */
+.team-container {
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+#outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  padding: 1.15em 0;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5ef4d6;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15vh auto;
+  margin-bottom: 2em;
+  border: #24e5a3 solid 3px;
+  border-radius: 10px;
+  width: 80vw;
+  background-color: rgba(34, 23, 39, 0.8);
+}
+
+.foto-container {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -75px;
+  top: -100px;
+  z-index: 3;
+  background-color: black;
+  border: #24e5a3 solid 3px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-image: url('../images/team01.png');
+  background-color: whitesmoke;
+  background-size: cover;
+}
+
+.foto-container-2 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -75px;
+  top: -100px;
+  z-index: 3;
+  background-color: black;
+  border: #24e5a3 solid 3px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-image: url('../images/hamza-foy.png');
+  background-size: cover;
+}
+
+.foto-container-3 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -75px;
+  top: -100px;
+  z-index: 3;
+  background-color: black;
+  border: #24e5a3 solid 3px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-image: url('../images/i_3.jpg');
+  background-size: cover;
+}
+
+.inner-container {
+  margin: 0.5em 1em;
+}
+
+.name-text {
+  font-size: 1.75em;
+  font-family: 'Viga', sans-serif;
+  letter-spacing: 0.055em;
+  color: #5ef4d6;
+  text-align: center;
+}
+
+.title-text {
+  font-size: 0.65em;
+  font-family: 'Rubik', 'sans-serif';
+  font-weight: 300;
+  color: #24e5a3;
+  text-align: center;
+  filter: blur(0.5px);
+}
+
+.body-text {
+  margin: 33px 0;
+  font-size: 0.95em;
+  line-height: 1.5em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #f1fff6;
+  text-align: center;
+  filter: blur(0.35px);
+}
+
+.links-assorted {
+  margin-bottom: 2vh;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#icon {
+  border: red solid 2px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  filter: invert(71%) sepia(91%) saturate(240%) hue-rotate(113deg)
+    brightness(96%) contrast(105%);
+}
+
+
+/*! ----- Media Queries Begin ---- */
 
 /* Desktop View */
 @media screen and (min-width: 768px) {
@@ -311,6 +444,37 @@ img {
     text-transform: uppercase;
     font-weight: 500;
     width: auto;
+  }
+  .team-container {
+    height: 100vh;
+    background-color: var(--background-color);
+  }
+
+  .main-title {
+    padding: 0.65em 0;
+    font-size: 3em;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5ef4d6;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  #outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    margin-bottom: 2em;
+    border: #24e5a3 solid 3px;
+    border-radius: 10px;
+    width: 20vw;
+    background-color: rgba(34, 23, 39, 0.8);
   }
 }
 /* 4K Desktop View */
