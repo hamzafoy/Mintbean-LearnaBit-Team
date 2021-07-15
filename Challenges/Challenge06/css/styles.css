@@ -43,7 +43,7 @@ img {
 }
 
 .main-title {
-  padding: 1.15em 0;
+  padding: 2.15em 0 .85em;
   font-family: 'Rubik', sans-serif;
   text-align: center;
   text-transform: uppercase;
