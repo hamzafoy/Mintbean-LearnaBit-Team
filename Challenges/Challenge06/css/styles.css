@@ -33,7 +33,7 @@ img {
 }
 
 .about-container {
-  height: 100vh;
+  height: 115vh;
   background-color: var(--background-color);
 }
 
@@ -104,6 +104,11 @@ img {
 img {
   height: 600px;
   width: 1000px;
+}
+
+.about-container {
+  height: 115vh;
+  background-color: var(--background-color);
 }
 
 .about-card-container {
