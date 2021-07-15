@@ -28,7 +28,7 @@ img {
   --background2-color: #221727;
   --primary-color: #5ef4d6;
   --primary2-color: #24e5a3;
-  --body-font: #f1fff6;
+  --body-font-color: #f1fff6;
   --secondary-color: #221727;
 }
 
@@ -151,4 +151,176 @@ img {
     width: auto;
 }
 
+}
+.nav {
+  position: relative;
+  height: 4.5rem;
+  background-color: var(--secondary-color);
+}
+
+.nav .nav--logo {
+  height: 4.5rem;
+  padding: 1rem;
+}
+
+#nav--links {
+  display: none;
+  padding: 0 1.5rem 0rem 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+#nav--links a {
+  padding: 1.5rem;
+  text-align: end;
+  color: var(--body-font-color);
+}
+
+#nav--links a:hover {
+  color: var(--hover-color) !important;
+}
+
+.nav--separtor {
+  display: none;
+  color: var(--body-font-color);
+}
+
+.nav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+  font-size: 1.33rem;
+  color: var(--primary-color);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: var(--body);
+  color: var(--body-font-color);
+  background: url(../images/mintbean-dome.png) no-repeat center / cover;
+}
+
+.hero--card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: #221727b1;
+}
+
+.hero--card-title {
+  font-size: 1.71rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: var(--header);
+}
+
+.hero--card-info {
+  margin-top: 1rem;
+  line-height: 1.4rem;
+  font-size: 0.78rem;
+}
+
+.hero--card-button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  #nav--links {
+    display: inline-flex;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #nav--links a {
+    padding: 1.5rem;
+    color: var(--body-font-color);
+  }
+
+  li.nav--separtor {
+    align-self: center;
+  }
+
+  .nav--separtor {
+    display: inline-flex;
+  }
+
+  .nav--button {
+    /** Position */
+    margin-top: -0.2rem;
+    margin-left: -1.85rem;
+    /** Box Modal */
+    padding: 0.25rem 1.2rem 0.25rem 1.2rem;
+    /** Typography */
+    color: var(--secondary-color);
+    font-family: var(--body);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    /** Visiual */
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+
+  .hero--card {
+    width: 38rem;
+    margin: 12rem auto auto 8rem;
+  }
+
+  .hero--card {
+    justify-items: start;
+  }
+
+  .hero--card-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-family: var(--header);
+  }
+
+  .hero--card-info {
+    font-size: 1.25rem;
+    line-height: 1.74rem;
+  }
+}
+
+/* 4K Desktop View */
+@media screen and (min-width: 2560px) {
+  #nav--links {
+    padding-left: 88.5rem;
+    background-color: none !important;
+  }
 }
