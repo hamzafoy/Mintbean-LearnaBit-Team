@@ -123,7 +123,7 @@ img {
 }
 
 .about-container {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-color);
 }
 
@@ -319,7 +319,6 @@ img {
     brightness(96%) contrast(105%);
 }
 
-
 /*! ----- Media Queries Begin ---- */
 
 /* Desktop View */
@@ -399,6 +398,11 @@ img {
   img {
     height: 600px;
     width: 1000px;
+  }
+
+  .about-container {
+    min-height: 100vh;
+    background-color: var(--background-color);
   }
 
   .about-card-container {
