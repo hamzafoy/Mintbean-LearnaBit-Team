@@ -1,4 +1,4 @@
-/** Broswer Reset -> Starts */
+/** Browser Reset -> Starts */
 *,
 *::before,
 *::after {
@@ -19,7 +19,7 @@ img {
   height: 100%;
 }
 
-/** Broswer Reset -> Ends */
+/** Browser Reset -> Ends */
 
 :root {
   --body: 'Rubik', sans-serif;
@@ -30,4 +30,113 @@ img {
   --primary2-color: #24e5a3;
   --body-font: #f1fff6;
   --secondary-color: #221727;
+}
+
+.about-container {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.about-main-title {
+  padding: 1.15em 0;
+  font-family: var(--header);
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5EF4D6;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+.about-card-main-title {
+  font-size: 1.5em;
+  font-family: var(--body);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: #F1FFF6;
+}
+
+.about-card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border: #24e5a3 solid 3px;
+  border-radius: 10px;
+  width: 90vw;
+  background-color: rgba(34,23,39, 0.8)
+}
+
+.text-and-button-container {
+  margin: 1em 1em;
+}
+
+.about-card-main-text {
+  display: block;
+  padding: .65em 0;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: var(--body);
+  letter-spacing: 0.01em;
+  color: #F1FFF6;
+}
+
+.join-button {
+  background-color: #5EF4D6;
+  color: #221727;
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: none;
+  font-family: var(--body);
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+}
+
+
+
+@media (min-width: 860px) {
+
+.about-card-container {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+}
+
+#mintbean-dome {
+    width: 50%;
+    height: 100%;
+}
+
+.about-main-title {
+    font-size: 2.5em;
+}
+
+.text-and-button-container {
+    margin: 1.25em 2.25em;
+}
+
+.about-card-main-text {
+    font-size: 0.75em;
+}
+
+.join-button {
+    background-color: #5EF4D6;
+    color: #221727;
+    font-size: 1.25em;
+    padding: 0.25em 0.75em;
+    margin: 0 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+}
+
 }
