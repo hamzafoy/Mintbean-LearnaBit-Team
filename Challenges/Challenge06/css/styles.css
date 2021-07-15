@@ -319,7 +319,6 @@ img {
     brightness(96%) contrast(105%);
 }
 
-
 /*! ----- Media Queries Begin ---- */
 
 /* Desktop View */
@@ -392,6 +391,106 @@ img {
   .hero--card-info {
     font-size: 1.25rem;
     line-height: 1.74rem;
+  }
+
+  /* contact css */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .contact__title {
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.07rem;
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card__logo {
+    margin-top: 2rem;
+  }
+  .card__text {
+    padding: 0 1.5rem;
+    line-height: 1.5rem;
+    color: var(--theme-third-color);
+    font-family: var(--main-font);
+    letter-spacing: 0.1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  .card__icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.3rem;
+    margin: 0.2rem 2rem;
+  }
+
+  .card__icon {
+    padding: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--theme-main-color) solid 2px;
+    border-radius: 50%;
+    font-size: 2rem;
+  }
+  .card,
+  .form__fields {
+    background-color: var(--bg-main-color);
+    border: var(--theme-main-color) solid 2px;
+    border-radius: 0.8rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form__fields {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+  }
+
+  .form__message {
+    min-height: 150px;
+  }
+
+  .form__button {
+    width: 100%;
+    background-color: var(--theme-main-color);
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -482,5 +581,45 @@ img {
   #nav--links {
     padding-left: 88.5rem;
     background-color: none !important;
+  }
+
+  /* contact css */
+  .contact__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    max-width: 80%;
+  }
+
+  .card__text {
+    padding: 0 2rem;
+    letter-spacing: 0rem;
+  }
+
+  .card__icon {
+    padding: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+
+  .form {
+    width: 420px;
+    height: 350px;
+    gap: 1.1rem;
+  }
+
+  .form__fields {
+    padding: 0.6rem 1rem;
+    font-size: 1.3rem;
   }
 }
