@@ -9,122 +9,213 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Mintbean Learn-a-bit Challenge 06 - Landing Page</title>
   </head>
 
   <body>
     <!-- Header section -->
-    Intro About Team Contact Join Level up bit by bit with Learn-a-bit As the
-    name says, the purpose of Learn-a-bit is about learning one bit of code at a
-    time. In these events, you will build small projects to educate yourself on
-    the fundamentals of web development using HTML, CSS, and JavaScript. These
-    events are relaxed and non-competitive, but are still challenging enough to
-    push you to use all your resources and knowledge to solve each problem. Join
-    a learn-a-ton
-
+    <section class="header">
+      <nav class="nav">
+        <img
+          src="../Challenge06/images/learnabit-logo.svg"
+          alt="logo"
+          class="nav--logo"
+        />
+        <ul id="nav--links">
+          <a href="">
+            <li>Intro</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>About</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>Team</li>
+          </a>
+          <li class="nav--separtor">|</li>
+          <a href="">
+            <li>Contact</li>
+          </a>
+          <a href="">
+            <li class="nav--button">Join</li>
+          </a>
+        </ul>
+        <a href="javascript:void(0)" class="icon" onclick="showNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <article class="hero">
+        <div class="hero--card">
+          <header>
+            <h1 class="hero--card-title">
+              Level up bit by bit with Learn-a-bit
+            </h1>
+          </header>
+          <p class="hero--card-info">
+            As the name says, the purpose of Learn-a-bit is about learning one
+            bit of code at a time. In these events, you will build small
+            projects to educate yourself on the fundamentals of web development
+            using HTML, CSS, and JavaScript. These events are relaxed and
+            non-competitive, but are still challenging enough to push you to use
+            all your resources and knowledge to solve each problem.
+          </p>
+          <a href="/Challenges/Challenge06/index.html" class="hero--card-button"
+            >Join a learn-a-ton</a
+          >
+        </div>
+      </article>
+    </section>
     <!-- About section -->
-    What is it about? What is learn-a-bit about? Learn-a-bit will teach you the
-    fundamentals through a hands-on approach. You will gain versatility in the
-    basic tools of the trade and learn the best practices for writing semantic
-    HTML and well-designed CSS. You will improve your design skills and start to
-    create attractive and attention-grabbing portfolio pieces while also gaining
-    confidence to tackle any of the harder hackathons. In the end, the first
-    impression and presentation of products are the main reason for its success
-    and appeal. Our products represent ourselves and our knowledge so we should
-    make it shine in the best light. Join a learn-a-bit
+    <div class="about-container">
+
+      <h1 class="about-main-title">
+          What is it about?
+      </h1>
+
+      <section class="about-card-container">
+
+          <img id="mintbean-dome" src="./images/mintbean-dome.png"/>
+
+          <article class="text-and-button-container">
+
+              <h1 class="about-card-main-title">
+                  What is learn-a-bit about ?
+              </h1>
+              
+              <p class="about-card-main-text">
+                  Learn-a-bit will teach you the fundamentals through a hands-on approach. You
+                  will gain versatility in the basic tools of the trade and learn the best
+                  practices for writing semantic HTML and well-designed CSS. You will improve
+                  your design skills and start to create attractive and attention-grabbing
+                  portfolio pieces while also gaining confidence to tackle any of the harder
+                  hackathons. 
+                  <br><br>
+                  In the end, the first impression and presentation of products
+                  are the main reason for its success and appeal. Our products represent
+                  ourselves and our knowledge so we should make it shine in the best light.
+              </p>
+              
+              <button class="join-button">
+                  Join a learn-a-bit
+              </button>
+
+          </article>
+      </section>
+  </div>
 
     <!-- Team section -->
 
     <div class="team-container">
+      <h1 class="main-title">Team</h1>
 
-      <h1 class="main-title">
-        Team
-    </h1>
-
-    <div id="outer-container">
-
-    <article class="card-container">
-        <section class="foto-container">
-            
-        </section>
-        <section class="inner-container">
-            <section class="name-text">
-                Kathy Lambert
-            </section>
-            <section class="title-text">
-                Software Developer
-            </section>
+      <div id="outer-container">
+        <article class="card-container">
+          <section class="foto-container"></section>
+          <section class="inner-container">
+            <section class="name-text">Kathy Lambert</section>
+            <section class="title-text">Software Developer</section>
             <section class="body-text">
-                I'm a Software Developer with a diverse background who is resourceful, organized with a passion for using 
-                technology to empower and change lives.
+              I'm a Software Developer with a diverse background who is
+              resourceful, organized with a passion for using technology to
+              empower and change lives.
             </section>
             <section class="links-assorted">
-                <div class="links">
-                    <img id="icon" src="./images/github.svg"/>
-                    <img id="icon" src="./images/globe.svg"/>
-                    <img id="icon" src="./images/gmail.svg"/>
-                    <img id="icon" src="./images/linkedin.svg"/>
-                </div>
+              <div class="links">
+                <a
+                  href="https://github.com/CodeMeKathy"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/github.svg"
+                /></a>
+                <a
+                  href="https://KathyLambert.me"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/globe.svg"
+                /></a>
+                <a
+                  href="mailto:Kathy@KathyLambert.me"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/gmail.svg"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/k-lambert/ "
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/linkedin.svg"
+                /></a>
+              </div>
             </section>
-        </section>
-    </article>
+          </section>
+        </article>
 
-
-    <article class="card-container">
-        <section class="foto-container-2">
-            
-        </section>
-        <section class="inner-container">
-            <section class="name-text">
-                Hamza Foy
-            </section>
-            <section class="title-text">
-                Junior Web Developer
-            </section>
+        <article class="card-container">
+          <section class="foto-container-2"></section>
+          <section class="inner-container">
+            <section class="name-text">Hamza Foy</section>
+            <section class="title-text">Junior Web Developer</section>
             <section class="body-text">
-                I'm curious, disciplined, &amp; swift in my learning. I have developed a number of 
-                websites and apps and work great with both diverse communities and businesses of varying sizes and clientele.
+              I'm curious, disciplined, &amp; swift in my learning. I have
+              developed a number of websites and apps and work great with both
+              diverse communities and businesses of varying sizes and clientele.
             </section>
             <section class="links-assorted">
-                <div class="links">
-                    <a href="https://github.com/hamzafoy" target="_blank" rel="noreferrer"><img id="icon" src="./images/github.svg"/></a>
-                    <a href="https://hamza-foy-portfolio.vercel.app/" target="_blank" rel="noreferrer"><img id="icon" src="./images/globe.svg"/></a>
-                    <a href="mailto:hamzaoflouisville@gmail.com" target="_blank"><img id="icon" src="./images/gmail.svg"/></a>
-                    <a href="https://www.linkedin.com/in/ross-hamza-foy/" target="_blank" rel="noreferrer"><img id="icon" src="./images/linkedin.svg"/></a>
-                </div>
+              <div class="links">
+                <a
+                  href="https://github.com/hamzafoy"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/github.svg"
+                /></a>
+                <a
+                  href="https://hamza-foy-portfolio.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/globe.svg"
+                /></a>
+                <a href="mailto:hamzaoflouisville@gmail.com" target="_blank"
+                  ><img id="icon" src="./images/gmail.svg"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/ross-hamza-foy/"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><img id="icon" src="./images/linkedin.svg"
+                /></a>
+              </div>
             </section>
-        </section>
-    </article>
+          </section>
+        </article>
 
-
-    <article class="card-container">
-        <section class="foto-container-3">
-            
-        </section>
-        <section class="inner-container">
-            <section class="name-text">
-                Celine Valentine
-            </section>
-            <section class="title-text">
-                Database Manager
-            </section>
+        <article class="card-container">
+          <section class="foto-container-3"></section>
+          <section class="inner-container">
+            <section class="name-text">Celine Valentine</section>
+            <section class="title-text">Database Manager</section>
             <section class="body-text">
-                I am a curious, extroverted, and quick-learning individual. These qualities allow me to be a wonderful developer.
+              I am a curious, extroverted, and quick-learning individual. These
+              qualities allow me to be a wonderful developer.
             </section>
             <section class="links-assorted">
+
                 <div class="links">
                     <a href="https://github.com/celinevalentine" target="_blank" rel="noreferrer"><img id="icon" src="./images/github.svg"/></a>
                     <a href="https://celinevalentine.com/" target="_blank" rel="noreferrer"><img id="icon" src="./images/globe.svg"/></a>
                     <img id="icon" src="./images/gmail.svg"/>
                     <a href="https://www.linkedin.com/in/celinevalentine/" target="_blank" rel="noreferrer"><img id="icon" src="./images/linkedin.svg"/></a>
                 </div>
+
             </section>
-        </section>
-    </article>
-
-</div>
-
+          </section>
+        </article>
+      </div>
     </div>
 
     <!-- Contact section -->
@@ -133,5 +224,20 @@
     conversation.
 
     <!-- Footer section -->
+
+    <script>
+      function showNav() {
+        var x = document.getElementById('nav-links')
+        console.log('hit')
+        if (x.style.display === 'block') {
+          console.log('hide')
+          x.style.display = 'none'
+        } else {
+          x.style.display = 'block'
+          // x.style.overflow = 'visible'
+          console.log('display')
+        }
+      }
+    </script>
   </body>
 </html>
