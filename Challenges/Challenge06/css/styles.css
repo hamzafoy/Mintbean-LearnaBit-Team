@@ -87,11 +87,13 @@ img {
   display: flex;
   flex-direction: column;
   width: 20rem;
+  /* Change to flex centered option */
   margin: 0 auto;
   margin-top: 3rem;
   padding: 1.5rem;
   border: 2px solid var(--primary-color);
   border-radius: 10px;
+  /* Add variable for color */
   background-color: #221727b1;
 }
 
